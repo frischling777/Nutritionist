@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "urbanist";
+  src: url(../fonts/Urbanist-Regular.ttf);
+}
+
+@font-face {
+  font-family: "urbanist-semibold";
+  src: url(../fonts/Urbanist-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "urbanist-bold";
+  src: url(../fonts/Urbanist-Bold.ttf);
+}
+
+@font-face {
+  font-family: "urbanist-extrabold";
+  src: url(../fonts/Urbanist-ExtraBold.ttf);
+}
+
+:root {
+  --green70: #cbea7b;
+  --green85: #e5f5bd;
+  --green95: #f6fbe9;
+  --green99: #fafdf2;
+  --green100: #dcf1a7;
+  --green-white: #eef8d3;
+  --green15: #1a3129;
+  --green20: #234338;
+  --green30: #346454;
+  --grey30: #4c4c4d;
+  --grey60: #98989a;
+  --grey26: #262626;
+  --white: #fff;
+  --black: #000;
+  --white-grey: #f7f7f7;
+  --space-l-r: 0 5vw;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-34: 34px;
+  --font-size-42: 42px;
+  --font-size-58: 58px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "urbanist", sans-serif;
+}
+
+body {
+  height: auto;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 34px;
+}
+
+p {
+  font-size: 18px;
+}
+
+header nav {
+  background-color: var(--green15);
+}
+
+.border {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: var(--green30);
+  padding: 0 20px;
+  margin: 0 30px;
+}
+
+.i-t-i {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--white);
+  padding: 15px;
+}
+
+.i-t-i img:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.i-t-i img:nth-of-type(2) {
+  margin-left: 10px;
+}
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.nav2 img:nth-of-type(2) {
+  height: 16px;
+  margin: 0 0 0 10px;
+}
+
+.menu .btn-start {
+  display: inline-block;
+  padding: 15px;
+  background-color: #cbea7b;
+  color: var(--grey26);
+  font-size: var(--font-size-18);
+  border-radius: 5px;
+  margin: 32px 40px 18px auto;
+  padding: 14px 24px;
+}
+
+.hero {
+  background-color: var(--green95);
+}
+
+.hero img {
+  max-width: 50%;
+  margin-left: 0;
+  border: none;
+  border-bottom-right-radius: 50px;
+
+  /* flex-shrink: 0; */
+}
+
+.hero .o-umrandung {
+  border: none;
+}
+
+.hero .content h2 {
+  border-bottom: 3px solid var(--green70);
+  display: inline-block;
+}
+
+.hero .content .btn-area .btn-start {
+  background-color: var(--green70);
+  border-style: none;
+  margin: 50px 0 70px 0;
+}
+
+.hero .content .btn-area a {
+  display: inline-block;
+  padding: 16px 24px;
+  border: 2px solid var(--green70);
+  border-radius: 8px;
+  color: var(--grey30);
+}
+
+.user {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.user p {
+  margin: 20px 0 0 10px;
+}
+
+.user p span {
+  color: #356554;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+header nav a,
+footer a {
+  color: white;
+  padding: 10px 2vw;
+  text-decoration: none;
+}
+
+.burg-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.burg-menu div {
+  background-color: var(--white);
+  height: 5px;
+  width: 30px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.hero img,
+.hero .content {
+  width: 50%;
+}
+
+.hero h2 {
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.btn-area {
+  margin-bottom: 20px;
+}
+
+.content img {
+  width: 80px;
+}
+
+.features {
+  padding: var(--space-l-r);
+}
+
+.f-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.calorie {
+  margin-top: 50px;
+}
+
+.calorie h2,
+.f-hero h2 {
+  margin-bottom: 30px;
+}
+
+.container-wrp-inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-bottom: 15px;
+}
+
+.container-wrp-inner .mitte {
+  background-color: var(--green95);
+  padding: 15px;
+  border-radius: 10px;
+  gap: 50px;
+  margin: 20px;
+}
+
+.container-wrp-inner .title img {
+  height: 30px;
+  padding: 12px;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.features .zweier .mitte .title img {
+  background-color: var(--green70);
+  padding: 12px;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+}
+.mitte {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.calorien {
+  background-color: #eef8d3;
+}
+
+.calorie h2,
+p {
+  text-align: center;
+}
+
+.calorie .berechnung {
+  width: 80%;
+  margin: var(--space-l-r);
+  background-color: --;
+}
+
+.calorie table {
+  width: 60%;
+  border: 2px solid var(--green70);
+  border-radius: 12px;
+  margin: 0 auto 50px auto;
+}
+
+td,
+th {
+  border-bottom: 1px solid var(--green70);
+  text-align: left;
+  padding: 8px;
+  color: var(--grey30);
+}
+
+td {
+  border: none;
+  border-radius: 12px;
+}
+
+.calorien div {
+  width: 50%;
+  margin: 30px 0;
+}
+
+.calorie article label input {
+  margin: 5px auto;
+}
+
+.flex-unten {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: var(--green15);
+}
+
+@media screen and (max-width: 920px) {
+  .menu {
+    display: none;
+  }
+  .burg-menu {
+    display: block;
+  }
+  .btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero img,
+  .hero .content {
+    width: 100%;
+  }
+  .content {
+    text-align: center;
+  }
+  .content img {
+    width: 80px;
+  }
+}
+
+/@media screen and (max-width: 550px) {
+  .container-wrp-inner {
+    flex-direction: column;
+  }
+}
